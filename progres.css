@@ -15,3 +15,16 @@ body {
     overflow: hidden;
 }
 
+.main-container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #999;
+}
+
+h3 {
+    color: grey;
+    font-size: 0.9rem;
+}
