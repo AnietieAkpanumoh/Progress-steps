@@ -89,3 +89,35 @@ h3 {
 .active {
     border-color: #f9004d;
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.button {
+    background-color: #f9004d;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    font-size: 14px;
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: #e0e0e0;
+}
