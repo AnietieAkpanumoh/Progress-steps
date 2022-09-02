@@ -28,3 +28,64 @@ h3 {
     color: grey;
     font-size: 0.9rem;
 }
+
+/* styling the container of the circle divs */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 350px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* styling the faint grey line that is going through the circles */
+.progress-container::before {
+    content: '';
+    background-color: #eecaca;
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    height: 2px;
+    width: 95%;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.progress {
+    background-color: #f9004d;
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    height: 2px;
+    width: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.progress-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling the circles */
+.circle {
+    background-color: white;
+    color: #999;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #e0e0e0;
+    transition: .4s ease;
+}
+
+.active {
+    border-color: #f9004d;
+}
